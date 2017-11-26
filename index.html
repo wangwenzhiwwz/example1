@@ -1,0 +1,662 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>王文志 综合案例</title>
+<!--[if lte IE 8]>
+	<script src="script/html5shiv.min.js"></script>
+	<style>						footer,header,main,figure,fagcaption,artice,{display:block;}
+	</style>
+<![endif]-->
+	
+
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<style type="text/css">
+	.box{
+		background-image:url(about:blank); /* for IE6 */ 
+		background-attachment:fixed; /*必须*/
+	}
+	.loginbar{
+		color:#aaaaaa;
+		width:100%;
+		height:32px;
+		background:#6b6b6b;
+	}
+	.loginbar a{
+		color:#aaaaaa;
+	}
+	.loginbar ul{
+		margin-left:150px;
+	}
+	.loginbar li{
+		margin-top:5px;
+		margin-left:20px;
+		float:left;
+	}
+	.regsiter{
+		margin-right:150px;
+		line-height:32px;
+		float:right;
+	}
+	.regsiter a{
+		color:#FFF
+	}
+	.nav{
+		overflow:hidden;
+		margin:0 auto;
+		width:1000px;
+		height:110px;
+	}
+	.logo{
+		float:left;
+		width:158px;
+		height:60px;
+		margin-top:18px;
+	}
+	.nav nav{
+		float:left;
+		margin-left:50px;
+		margin-top:36px;
+		width:770px;
+		height:30px;
+		
+	}
+	nav li:first-child{
+		background:#e8463b;
+	}
+	
+	nav li{
+		width:110px;
+		height:40px;
+		float:left;
+		line-height:40px;
+		text-align:center;
+	}
+	nav li a{
+		letter-spacing:2px;
+		font-family:微软雅黑;
+		font-weight:bold;
+		color:#CCC;
+	}
+	nav li:first-child a{
+		letter-spacing:0.5em;
+	}
+	nav li:hover{
+		background:#e8463b;
+	}
+	#banner{
+		background:url(images/banner1.jpg) no-repeat center;
+		width:100%;
+		height:20px;
+		padding-top:380px;
+	}
+	#banner ul{
+		margin:0 auto;
+		width:155px;
+		height:15px;
+	}
+	#banner li a{
+		margin-left:8px;
+		display:inline-block;
+		float:left;
+		width:15px;
+		height:15px;
+		border-radius:15px;
+		background:#FFF;
+		opacity:0.5;
+	}
+	#banner li a:hover{
+		background:#333;
+	}
+	.login{
+		border:none;
+		position:absolute;
+		top:180px;
+		right:10%;
+		width:300px;
+		height:330px;
+		background:rgba(102,51,51,0.8);
+		
+	}
+	.login span{
+		display:inline-block;
+		width:300px;
+		height:40px;
+		text-align:center;
+		line-height:60px;
+		font-size:18px;
+		font-weight:bold;
+		color:#FFF;
+	}
+	.login li{
+		margin-left:20px;
+		margin-top:30px;
+		width:260px;
+		height:32px;
+		background:#FFF;
+	}
+	
+	.login li label{
+		display:inline-block;
+		width:30px;
+		margin-left:10px;
+		line-height:30px;
+		text-align:center;
+	}
+	.login ul li:nth-of-type(1) label{
+		position:relative;
+		top:-3px;
+	}
+	.login li:nth-of-type(2) label{
+		position:relative;
+		top:-3px;
+	}
+	.login li:nth-of-type(3) label{
+		position:relative;
+		top:-8px;
+	}
+	.login input:focus{
+		outline:none;
+	}
+	.login input{
+		width:200px;
+		height:25px;
+		border:0;
+	}
+	.login p{
+		color:#CCC;
+		margin-left:150px;
+		margin-top:30px;
+	}
+	.login p a{
+		color:#FFF;
+	}
+	.login>input{
+	}
+	.icon{
+		margin:0 auto;
+		width:1000px;
+		height:225px;
+	}
+	.icon li{
+		overflow:hidden;
+		margin-left:20px;
+		float:left;
+		position:relative;
+		top:55px;
+		width:230px;
+		height:112px;
+		background:url(images/bg.png) no-repeat;
+	}
+	.icon li:nth-of-type(1) img {
+		position:absolute;
+		top:40px;
+		left:16px;
+	}
+	.icon li:nth-of-type(2) img {
+		position:absolute;
+		top:20px;
+		left:28px;
+	}
+	.icon ul li:nth-of-type(3) img {
+		position:absolute;
+		top:20px;
+		left:27px;
+	}
+	.icon li:nth-of-type(4) img {
+		position:absolute;
+		top:20px;
+		left:15px;
+	}
+	.icon li a:first-letter{
+		font-size:1.5em;
+	}
+	.icon li a{
+		color:#e8453c;
+		position:absolute;
+		top:50px;
+		left:110px;
+		font-family:宋体;
+		font-weight:bold;
+		font-size:14px;
+		letter-spacing:2px;
+		line-height:25px;
+	}
+	.content{
+		margin:0 auto; 
+		width:1000px;
+		height:281px;
+	}
+	figure{
+		background:url(images/banner2.jpg) no-repeat;
+		float:left;
+		width:543px;
+		height:281px;
+	}
+	figure figcaption{
+		margin-top:241px;
+		opacity:0.5;
+		width:543px;
+		height:40px;
+		background:#CCC;
+	}
+	figure figcaption a{
+		color:#F00;
+		font-size:16px;
+		font-weight:bold;
+		display:inline-block;
+		width:300px;
+		margin-left:140px;
+		line-height:40px;
+	}
+	.shop{
+		margin-left:20px;
+		float:left;
+		width:432px;
+		height:281px;
+	}
+	h2{
+		font-size:17px;
+		color:#FFF;
+	}
+	.shop h2{
+		width:432px;
+		height:40px;
+		border-top:2px solid #e8453c;
+	}
+	.shop h2 span{
+		display:inline-block;
+		width:120px;
+		height:40px;
+		background:#e8453c;
+		border-radius:0px 0px 5px 5px;
+		text-align:center;
+		line-height:40px;
+	}
+	.shop h2 a{
+		color:#999;
+		font:14px;
+		font-weight:100;
+		float:right;
+		line-height:40px;
+	}
+	.shop li{
+		
+		width:432px;
+		line-height:42px;
+	}
+	.shop li a{
+		color:#696969;
+		font-size:17px;
+	}
+	.shop li a:before{
+		margin-right:5px;
+		content:"*"
+	}
+	.shop li p{
+		margin-left:10px;
+		font-size:15px;
+		line-height:20px;
+		color:#999;
+	}
+	.section{
+		margin:0 auto;
+		margin-top:35px;
+		width:1000px;
+		height:300px;
+	}
+	.section-1{
+		float:left;
+		width:543px;
+		height:300px;
+	}
+	.section-1 h2{
+		width:543px;
+		height:40px;
+		border-top:2px solid #e8453c;
+	}
+	.section-1 h2>a{
+		color:#000;
+		line-height:40px;
+		text-align:center;
+		display:inline-block;
+		width:120px;
+		height:40px;
+	}
+	.section-1 h2>a:first-child{
+		color:#FFF;
+		display:inline-block;
+		width:120px;
+		height:40px;
+		background:#e8453c;
+		border-radius:0px 0px 5px 5px;
+	}
+	.section-1 h2 span a{
+		color:#999;
+		font:14px;
+		font-weight:100;
+		float:right;
+		line-height:40px;
+	}
+	.section-1 li{
+		width:483px;
+		text-overflow: ellipsis;
+		line-height:36px;
+		white-space:nowrap;
+		overflow:hidden;
+	}
+	.section-1 li a:before{
+		margin-right:5px;
+		content:"*";
+	}
+	.section-1 li a{
+		font-size:16px;
+		color:#696666;
+	}
+	.section-2{
+		margin-left:20px;
+		float:left;
+		width:432px;
+		height:300px;
+	}
+	.section-2 h2{
+		width:432px;
+		height:40px;
+		border-top:2px solid #e8453c;
+	}
+	.section-2 h2 span a{
+		color:#FFF;
+		display:inline-block;
+		width:130px;
+		height:40px;
+		background:#e8453c;
+		border-radius:0px 0px 5px 5px;
+		text-align:center;
+		line-height:40px;
+	}
+	.section-2 h2>a{
+		color:#999;
+		font:14px;
+		font-weight:100;
+		float:right;
+		line-height:40px;
+	}
+	.section-2 table tr{
+		width:432px;
+		height:30px;
+	}
+	.section-2 table th,td{
+		text-align:center;
+		line-height:30px;
+		width:100px;
+	}
+	.footer{
+		padding-top:30px;
+		width:100%;
+		height:120px;
+		background:#6b6b6b;
+	}
+	.link{
+		margin:0 auto;
+		width:1000px;
+		height:40px;
+	}
+	.link-left ul li{
+		float:left;
+		width:150px;
+		height:30px;
+		line-height:30px;
+		
+	}
+	.link-left li:first-letter:before{
+	}
+	.link-left ul li:before{
+		margin-right:30px;
+		color:#FFF;
+		content:"|"
+	}
+	.link-left li a{
+		color:#FFF;
+	}
+	.link-right span{
+		line-height:30px;
+		color:#FFF;
+		float:left;
+	}
+	.link-right li{
+		text-align:center;
+		line-height:25px;
+		margin-left:30px;
+		width:30px;
+		height:30px;
+		border-radius:30px;
+		background:#fafafa;
+		float:left;
+	}
+		
+	.link-right li a{
+		
+		
+	}
+	address{
+		margin:10px auto;
+		width:600px;
+		color:#FFF;
+	}
+	address span{
+		margin-left:35px;
+	}
+	sup{
+		display:inline-block;
+		width:13px;
+		height:13px;
+		border-radius:13px;
+		background:#F00;
+		color:#FFF;
+		font-size:11px;
+		text-align:center;
+		line-height:13px;
+	}
+	.fixed{
+		width:60px;
+		height:260px;
+		position:fixed;
+		right:0px;
+		top:200px;
+	}
+	.fixed li{
+		margin-bottom:3px;
+		width:60px;
+		height:60px;
+		background:#FFF;
+		opacity:0.6;
+	}
+	.fixed li img{
+		position:relative;
+		top:10px;
+		left:18px;
+	}
+	.fixed li span{
+		display:inline-block;
+		width:60px;
+		text-align:center;
+		position:relative;
+		top:15px;
+		font-size:13px;
+		color:#666;
+	}
+</style>
+
+</head>
+
+<body>
+<div class="box">
+<!--***********************************herder 包含loginbar nav ********************************-->
+	<header class="header">
+    	<div class="loginbar">
+            <ul>
+                <li><a href="#"><img src="images/icon1.png" />加入收藏</a></li>
+                <li><a href="#"><img src="images/sina.png" style="opacity:0.5;"/>关注我们</a></li>
+                <li><a href="#"><img src="images/icon2.png"/>400-888-8888</a></li>
+            </ul>
+            <div class="regsiter">
+                <p>您好，欢迎来到宏图金融！<span>请<a href="#">登录/注册</a></span></p>
+                
+            </div>
+        </div>
+        <div class="nav">
+            <div class="logo"><h1><img src="images/logo.png" width="158"></h1></div>
+            <nav>
+                <ul>
+                    <li><a href="#">首 页</a></li>
+                    <li><a href="#">理财专区</a></li>
+                    <li><a href="#">借款申请</a></li>
+                    <li><a href="#">债权转让</a></li>
+                    <li><a href="#">我的账户</a></li>
+                    <li><a href="#">金融资讯</a></li>
+                    <li><a href="#">新手指引</a></li>
+                </ul>
+            
+            </nav>
+        </div>
+    </header>
+<!--*************************************main 包含banner content sention****************************************-->
+    <main class="main">
+    	<div class="fixed">
+        	<ul>
+            	<li><a href="#"><img src="images/qq.jpg"/><span>在线客服</span></a></li>
+                <li><a href="#"><img src="images/code.jpg"/><span>APP</span></a></li>
+                <li><a href="#"><img src="images/tools.jpg"/><span>工具箱</span></a></li>
+                <li><a href="#"><img src="images/return.jpg"/><span></span></a></li>
+            </ul>
+        </div>
+<!--**************************************bannner****************************************-->
+    	<div class="banner">
+			<div id="banner">
+            	<ul>
+                	<li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+        	<div class="login">
+            <form>
+            	<span>用户登录</span>
+                <ul>
+                    <li><label><img src="images/username.jpg"/></label><input type="text" placeholder="请输入用户名" required autofocus></li>
+                    <li><label><img src="images/password.jpg"/></label><input type="password" placeholder="请输入密码" required></li>
+                    <li><label><img src="images/email.jpg"/></label><input type="text" placeholder="请输入邮箱地址"></li>
+                </ul>
+                <p>没有账号？<a href="#">立即注册</a></p>
+                <input type="submit" style=" margin-left:20px; margin-top:5px; border-radius:5px; width:260px; height=39px; background-color:#f1aa2c;" />
+            </form>
+            </div>
+        </div>
+        <div class="icon">
+        	<ul>
+            	<li><img src="images/percent.png"/><a href="#">全额<br/>本息保障</a></li>
+                <li><img src="images/lock.png"/><a href="#">平台<br/>风险基金</a></li>
+                <li><img src="images/money.png"/><a href="#">超额<br/>抵押贷款</a></li>
+                <li><img src="images/hammer.png"/><a href="#">全程<br/>法律援助</a></li>
+        	</ul>
+        </div>
+        <div class="content">
+        	<figure>
+            <figcaption><a href="#">宏图金融注册送豪礼，快加入我们吧...</a></figcaption>
+            </figure>
+            <div class="shop">
+            	<h2><span>官方公告</span><a href="#">更多></a></h2>
+                <ul>
+                	<li><a href="#">中国小额信贷机构联席理事会首迎P2P，人人贷实至名归<p>一直坚持科技创新，践行普惠金融信息服务模式和技术的不断创新为中国多层次金融服务体系建设做出持续贡献。此次入选中国小额信贷机构联席会理事会</p></a></li>
+                    <li><a href="#">P2P发展迅猛多家企业签约宏图安全网贷系统6.0系统<sup>H</sup></a></li>
+                    <li><a href="#">互联网金融理性发展土壤日趋肥沃<sup>H</sup></a></li>
+                    <li><a href="#">互联网金融监管政策将在近期出台</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="section">
+        	<div class="section-1">
+            	<h2><a href="#">借款技巧</a><a href="#">理财技巧</a><span><a href="#">更多></a></span></h2>
+                <ul>
+                	<li><a href="#">借款标题应真诚而清晰，概括出借款用途和个人优势例如还款记录、个人</a></li>
+                	<li><a href="#">借款金额不宜设置过高，因为金额越大，流标可能性越高，投标人都不希望</a></li>
+                    <li><a href="#">过低的利率没有吸引力，除非借出者非常信任和支持你。但也不能盲目</a></li>
+                    <li><a href="#">我能选择那些还款方式我要如何借款？</a></li>
+                    <li><a href="#">没有信心很快投满的话就设置10天，反正投满就可以提前结束了。</a></li>
+                    <li><a href="#">强烈建议详细写明借款用途、目前负债情况（在其他地方欠款情况），收入</a></li>
+                </ul>
+            </div>
+            <div class="section-2">
+            	<h2><span><a href="#">理财风云榜</a></span><a href="#">更多></a></h2>
+                <table>
+                	<tr>
+                    	<th>排名</th>
+                        <th>用户名</th>
+                        <th>投资资金</th>
+                        <th>收益率</th>
+                    </tr>
+                    <tr>
+                    	<td><img src="images/gold.jpg"/></td>
+                        <td>木**</td>
+                        <td>￥4.1012亿</td>
+                        <td>10.46%</td>
+                    </tr>
+                    <tr>
+                    	<td><img src="images/silver.jpg"/></td>
+                        <td>y***</td>
+                        <td>￥7901.29万</td>
+                        <td>29.96%</td>
+                    </tr>
+                    <tr>
+                    	<td><img src="images/bronze.jpg"/></td>
+                        <td>吴**</td>
+                        <td>￥4427.34万</td>
+                        <td>7.43%</td>
+                    </tr>
+                    <tr>
+                    	<td>4</td>
+                        <td>刘***</td>
+                        <td>￥4400.0万</td>
+                        <td>8.00%</td>
+                    </tr>
+                    <tr>
+                    	<td>5</td>
+                        <td>x***</td>
+                        <td>￥2502.33万</td>
+                        <td>29.58%</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+<!--********************************************************footer***************************************************************-->
+    <footer class="footer">
+    	<div class="link">
+        	<div class="link-left">
+                <ul>
+                	<li><a href="#">新手指引</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">帮助我们</a></li>
+                    <li><a href="#">快速通道</a></li>
+                </ul>
+            </div>
+            <div class="link-right">
+            	<span>关注我们:</span>
+                <ul>
+                	<li><a href="#"><img src="images/weixin.png"/></a></li>
+                    <li><a href="#"><img src="images/weibo.png"/></a></li>
+                    <li><a href="#"><img src="images/sina.png"/></a></li>
+                    <li><a href="#"><img src="images/favorite.png"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <address><span>全国服务热线：400-888-8888</span><span>地址：江西省南昌市青云谱区气象路58号</span></address>
+    </footer>
+    
+
+</div>
+</body>
+</html>
